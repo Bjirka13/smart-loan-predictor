@@ -29,7 +29,7 @@ Loan approval processes can be tedious and require accurate evaluation of applic
 
 ## Key Insights
 
-** Data Characteristics**
+Data Characteristics
 - The dataset contains demographic and financial features, such as:
   - Gender
   - Marital status
@@ -43,21 +43,21 @@ Loan approval processes can be tedious and require accurate evaluation of applic
 
 ---
 
-** Modeling Approach**
+Modeling Approach
 - A **Logistic Regression classifier** was selected for its simplicity and interpretability.
 - The model was trained to predict a binary outcome: *Loan Approved* or *Loan Not Approved*.
 - Performance metrics were evaluated on a holdout set to avoid overfitting.
 
 ---
 
-** Model Performance**
+Model Performance
 - **Accuracy** on validation data reached an acceptable level for a baseline model.
 - The model identified credit history and income as the most influential predictors.
 - Feature importance analysis highlighted that applicants with a positive credit history had significantly higher approval probabilities.
 
 ---
 
-** Deployment**
+Deployment
 - The trained model was exported to a `.pkl` file.
 - A lightweight **Flask web application** was developed to serve predictions in real time.
 - The prediction interface allows input of applicant details and returns the approval decision instantly.
